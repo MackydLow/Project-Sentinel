@@ -44,3 +44,15 @@ See [docs/architecture.md](docs/architecture.md) for full setup instructions.
 - Integrate Cortex/TheHive for incident response workflow
 - Add GeoIP enrichment for source IP mapping
 - Build automated response playbooks
+
+### Installed Detection Rules
+![Installed Rules](docs/screenshots/detection-rules-installed.png)
+*All 5 custom SIEM rules active with severity levels*
+
+### Hydra Brute Force Simulation
+![Hydra Attack](docs/screenshots/hydra-brute-force.png)
+*Hydra v9.7 performing SSH password spraying against localhost — generates the log events our rule detects*
+
+### Nmap Port Scan Simulation
+![Nmap Scan](docs/screenshots/nmap-port-scan.png)
+*Nmap service scan against localhost — simulating T1046 Network Service Discovery*
