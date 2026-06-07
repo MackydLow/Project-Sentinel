@@ -45,10 +45,6 @@ See [docs/architecture.md](docs/architecture.md) for full setup instructions.
 - Add GeoIP enrichment for source IP mapping
 - Build automated response playbooks
 
-### Installed Detection Rules
-![Installed Rules](docs/screenshots/detection-rules-installed.png)
-*All 5 custom SIEM rules active with severity levels*
-
 ## Screenshots
 
 ### Live Alerts Dashboard
