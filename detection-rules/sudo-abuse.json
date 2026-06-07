@@ -1,0 +1,16 @@
+{
+  "name": "Suspicious Sudo Usage",
+  "description": "Detects sudo commands run by any user other than socanalyst",
+  "severity": "medium",
+  "risk_score": 47,
+  "type": "query",
+  "query": "event.dataset:system.auth AND system.auth.sudo.command:* AND NOT system.auth.sudo.user:socanalyst",
+  "index": ["filebeat-*"],
+  "interval": "5m",
+  "mitre": {
+    "tactic": "Privilege Escalation",
+    "technique": "T1548.003 - Abuse Elevation Control Mechanism: Sudo"
+  },
+  "status": "active",
+  "evidence": "See docs/screenshots/alerts-firing.png"
+}

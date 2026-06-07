@@ -1,0 +1,18 @@
+# Elasticsearch Configuration — Project Sentinel
+# Location on VM: /etc/elasticsearch/elasticsearch.yml
+
+cluster.name: sentinel-soc
+node.name: sentinel-node-01
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
+network.host: 0.0.0.0
+http.port: 9200
+discovery.type: single-node
+xpack.security.enabled: true
+xpack.security.transport.ssl.enabled: false
+xpack.security.http.ssl.enabled: false
+
+# Notes:
+# SSL disabled intentionally for home lab simplicity
+# In production, enable SSL and use certificates
+# Security enabled to allow Kibana SIEM detection engine

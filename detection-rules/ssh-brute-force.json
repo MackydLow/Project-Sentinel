@@ -1,0 +1,20 @@
+{
+  "name": "SSH BRUTE Force Detection",
+  "description": "Detects more than 5 failed SSH password attempts from the same IP within 1 minute",
+  "severity": "high",
+  "risk_score": 73,
+  "type": "threshold",
+  "query": "event.dataset:system.auth AND message:*failed* AND message:*root*",
+  "threshold": {
+    "field": [],
+    "value": 5
+  },
+  "index": ["filebeat-*"],
+  "interval": "1m",
+  "mitre": {
+    "tactic": "Credential Access",
+    "technique": "T1110.001 - Brute Force: Password Guessing"
+  },
+  "status": "active",
+  "evidence": "See docs/screenshots/ssh-brute-force-alert.png"
+}

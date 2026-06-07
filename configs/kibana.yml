@@ -1,0 +1,18 @@
+# Kibana Configuration — Project Sentinel
+# Location on VM: /etc/kibana/kibana.yml
+
+server.port: 5601
+server.host: "0.0.0.0"
+elasticsearch.hosts: ["http://localhost:9200"]
+elasticsearch.username: "kibana_system"
+elasticsearch.password: "<redacted>"
+
+# Encryption keys required for SIEM detection engine
+xpack.encryptedSavedObjects.encryptionKey: "<redacted>"
+xpack.reporting.encryptionKey: "<redacted>"
+xpack.security.encryptionKey: "<redacted>"
+
+# Notes:
+# Passwords and keys redacted for security
+# Generate encryption keys with:
+# sudo /usr/share/kibana/bin/kibana-encryption-keys generate

@@ -1,0 +1,20 @@
+{
+  "name": "Port Scan Detection",
+  "description": "Detects more than 20 Suricata alerts from the same source IP within 30 seconds",
+  "severity": "high",
+  "risk_score": 73,
+  "type": "threshold",
+  "query": "event.dataset:suricata.eve AND suricata.eve.alert.category:*Attempted Information Leak*",
+  "threshold": {
+    "field": ["source.ip"],
+    "value": 20
+  },
+  "index": ["filebeat-*"],
+  "interval": "1m",
+  "mitre": {
+    "tactic": "Discovery",
+    "technique": "T1046 - Network Service Discovery"
+  },
+  "status": "active",
+  "evidence": "See docs/screenshots/detection-rules-page.png"
+}
