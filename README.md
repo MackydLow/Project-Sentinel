@@ -49,14 +49,6 @@ See [docs/architecture.md](docs/architecture.md) for full setup instructions.
 ![Installed Rules](docs/screenshots/detection-rules-installed.png)
 *All 5 custom SIEM rules active with severity levels*
 
-### Hydra Brute Force Simulation
-![Hydra Attack](docs/screenshots/hydra-brute-force.png)
-*Hydra v9.7 performing SSH password spraying against localhost — generates the log events our rule detects*
-
-### Nmap Port Scan Simulation
-![Nmap Scan](docs/screenshots/nmap-port-scan.png)
-*Nmap service scan against localhost — simulating T1046 Network Service Discovery*
-
 ## Screenshots
 
 ### Live Alerts Dashboard
@@ -78,3 +70,16 @@ See [docs/architecture.md](docs/architecture.md) for full setup instructions.
 ### Reverse Shell Rule Detail
 ![Reverse Shell Rule](docs/screenshots/reverse-shell-alert.png)
 *KQL rule detecting reverse shell patterns in process arguments — MITRE T1059.004*
+
+### Installed Detection Rules
+![Installed Rules](docs/screenshots/detection-rules-installed.png)
+*All 5 custom SIEM rules active with severity levels*
+
+### Hydra Brute Force Simulation
+![Hydra Attack](docs/screenshots/hydra-brute-force.png)
+*Hydra v9.7 performing SSH password spraying against localhost — generates t>
+
+### Nmap Port Scan Simulation
+![Nmap Scan](docs/screenshots/nmap-port-scan.png)
+*Nmap service scan against localhost — simulating T1046 Network Service Disc>
+
