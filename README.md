@@ -56,3 +56,25 @@ See [docs/architecture.md](docs/architecture.md) for full setup instructions.
 ### Nmap Port Scan Simulation
 ![Nmap Scan](docs/screenshots/nmap-port-scan.png)
 *Nmap service scan against localhost — simulating T1046 Network Service Discovery*
+
+## Screenshots
+
+### Live Alerts Dashboard
+![Alerts Firing](docs/screenshots/alerts-firing.png)
+*25 alerts fired across 3 rules — SSH Brute Force, Reverse Shell, and Suspicious Sudo Usage*
+
+### SOC Overview Dashboard
+![SOC Dashboard](docs/screenshots/soc-dashboard.png)
+*Custom Kibana dashboard showing 26,740 events, attack timeline spikes, top attacker IPs, and severity breakdown*
+
+### Detection Rules
+![Detection Rules](docs/screenshots/detection-rules-page.png)
+*All 5 SIEM detection rules active and succeeding — mapped to MITRE ATT&CK*
+
+### SSH Brute Force Rule Detail
+![SSH Rule](docs/screenshots/ssh-brute-force-alert.png)
+*Threshold rule detecting 5+ failed SSH attempts — MITRE T1110.001*
+
+### Reverse Shell Rule Detail
+![Reverse Shell Rule](docs/screenshots/reverse-shell-alert.png)
+*KQL rule detecting reverse shell patterns in process arguments — MITRE T1059.004*
